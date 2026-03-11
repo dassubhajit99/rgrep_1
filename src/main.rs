@@ -22,8 +22,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let reader = BufReader::new(file);
 
-    println!("{:?}", reader);
-
     for line in reader.lines() {
         match line {
             Ok(s) => {
